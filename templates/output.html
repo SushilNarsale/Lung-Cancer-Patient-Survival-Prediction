@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>G-24</title>
+
+    <link rel="shortcut icon" href="./static/assets/images/fav.jpg">
+    <link rel="stylesheet" href="./static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" href="./static/assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./static/assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="./static/assets/css/style.css" />
+    <link href="./static/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .result {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .result p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .result span {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header id="menu-jk">
+    
+        <div id="nav-head" class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 no-padding col-sm-12 nav-img">
+                        <img src="./static/assets/images/logo.jpeg" alt="">
+                       <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                    </div>
+                    <div id="menu" class="col-lg-8 col-md-9 d-none d-md-block nav-item">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about_us">About Us</a></li> 
+                            <li><a href="#contact_us">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            <p>The Predicted Survival Rate: <span>{{ pred }}</span></p>
+        </div>
+    </div>
+</body>
+</html>
